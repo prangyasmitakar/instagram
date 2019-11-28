@@ -1,0 +1,18 @@
+<div class="col-md-3 signupfrom offset-4  text-center  ">
+
+
+    <button class="btn btn-primary">login with facebook</button>
+    <p>or</p>
+    <form action="" #f="ngForm" (ngSubmit)="submit(f)">
+        <div class="form-group">
+            <input ngModel name="email" type="text" class="form-control mt-2 mb-2"
+                placeholder="moblile number or email">
+
+            <input ngModel name="password" type="password" class="form-control mt-2 mb-2" placeholder="enter password">
+            <button class="btn btn-primary btn-block" [disabled]="!f.valid">Login</button>
+
+        </div>
+    </form>
+
+
+</div>
